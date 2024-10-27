@@ -1,3 +1,5 @@
+#!/bin/bash 
+gcc -o 1-alphabet
 #include "main.h"
 
 /**
@@ -13,4 +15,4 @@ void print_alphabet(void)
 		_putchar(letter);
 
 	putchar('\n');
-}gcc -o 1-alphabet 
+}
