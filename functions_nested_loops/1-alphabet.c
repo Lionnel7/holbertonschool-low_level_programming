@@ -13,4 +13,4 @@ void print_alphabet(void)
 		_putchar(letter);
 
 	putchar('\n');
-}
+}gcc -o 1-alphabet -Wall -Werror -Wextra -pedantic -std=gnu89 _putchar.c main.c 1-alphabet.c
