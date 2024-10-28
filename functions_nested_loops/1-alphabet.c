@@ -1,5 +1,4 @@
-#!/bin/bash 
-gcc -o 1-alphabet
+#include <stdio.h>
 #include "main.h"
 
 /**
