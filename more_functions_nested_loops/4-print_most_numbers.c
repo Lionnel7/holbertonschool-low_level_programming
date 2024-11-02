@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 *print_most_numbers - prints numbers except 2 and 4
 *
@@ -13,7 +13,7 @@ if ((number == 50) || (number == 52))
 {
 continue;
 }
-putchar(number);
+_putchar(number);
 }
-putchar(10);
+_putchar(10);
 }
