@@ -9,9 +9,9 @@
 *Return: the number of nodes
 */
 
-size_t print_list(const printf *h)
+size_t print_list(const list_t *h)
 {
-const printf *cursor = h;
+const list_t *cursor = h;
 size_t count = 0;
 
 while (cursor != NULL)
