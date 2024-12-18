@@ -1,1 +1,3 @@
-# holbertonschool-low_level_programming
+# README.md
+
+Ce fichier est une combinaison des contenus des branches main et master.
