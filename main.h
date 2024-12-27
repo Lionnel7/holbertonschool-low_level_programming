@@ -1,14 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stddef.h> /* Pour size_t */
 
-typedef struct list_s
+/* Définition de la structure listint_t */
+typedef struct listint_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-} list_t;
+    int n;
+    struct listint_s *next;
+} listint_t;
 
-size_t print_list(const list_t *h);
+/* Prototypes des fonctions */
+size_t listint_len(const listint_t *h);
 
 #endif /* MAIN_H */
