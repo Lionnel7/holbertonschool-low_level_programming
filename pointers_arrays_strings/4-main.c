@@ -2,40 +2,17 @@
 #include <stdio.h>
 
 /**
- * print_array - affiche un tableau d'entiers
- * @a: un tableau d'entiers
- * @n: le nombre d'éléments à afficher
+ * main - check the code
  *
- * Return: rien.
- */
-void print_array(int *a, int n)
-{
-    int i;
-
-    i = 0;
-    while (i < n)
-    {
-        if (i != 0)
-        {
-            printf(", ");
-        }
-        printf("%d", a[i]);
-        i++;
-    }
-    printf("\n");
-}
-
-/**
- * main - vérifie le code
- *
- * Return: Toujours 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-    int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-    print_array(a, sizeof(a) / sizeof(int));
-    reverse_array(a, sizeof(a) / sizeof(int));
-    print_array(a, sizeof(a) / sizeof(int));
+    t = _strpbrk(s, f);
+    printf("%s\n", t);
     return (0);
 }
