@@ -8,37 +8,11 @@
  */
 int main(void)
 {
-    char s1[20] = "Hello";
-    char s2[20] = "World!";
-    char s3[20];
+    char *s = "hello, world";
+    char *f = "oleh";
+    unsigned int n;
 
-    _strcpy(s3, s2);
-    printf("Après _strcpy(s3, s2): s3 = %s\n", s3);
-
-    _strcpy(s3, s1);
-    printf("Après _strcpy(s3, s1): s3 = %s\n", s3);
-
-    _strcpy(s3, s1);
-    printf("Après _strcpy(s3, s1): s3 = %s\n", s3);
-
+    n = _strspn(s, f);
+    printf("%u\n", n);
     return (0);
-}
-
-/**
- * _strcpy - Copies a string
- * @dest: Destination string
- * @src: Source string
- * Return: Pointer to dest
- */
-char *_strcpy(char *dest, char *src)
-{
-    char *ptr = dest;
-    while (*src != '\0')
-    {
-        *dest = *src;
-        dest++;
-        src++;
-    }
-    *dest = '\0';
-    return ptr;
 }
